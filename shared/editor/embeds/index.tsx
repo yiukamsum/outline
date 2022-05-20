@@ -35,6 +35,7 @@ import Otter from "./Otter";
 import Pitch from "./Pitch";
 import Prezi from "./Prezi";
 import Spotify from "./Spotify";
+import Swagger from "./Swagger";
 import Tldraw from "./Tldraw";
 import Trello from "./Trello";
 import Typeform from "./Typeform";
@@ -83,6 +84,13 @@ const embeds: EmbedDescriptor[] = [
     icon: () => <Img src="/images/abstract.png" alt="Abstract" />,
     component: Abstract,
     matcher: matcher(Abstract),
+  },
+  {
+    title: "Swagger",
+    keywords: "kanban",
+    icon: () => <Img src="/images/trello.png" alt="Swagger" />,
+    component: Swagger,
+    matcher: matcher(Swagger),
   },
   {
     title: "Airtable",
